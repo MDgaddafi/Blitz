@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Grotters';
+  src: url('./assets/fonts/Grotters.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* src/index.css অথবা App.css এর মধ্যে যুক্ত করো card arrow animation  */
+@keyframes arrowFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.arrow-animate {
+  animation: arrowFadeIn 0.8s ease-out forwards;
+}
