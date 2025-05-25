@@ -71,8 +71,8 @@ const Footer = () => {
             <div className="col-span-6 text-center grid justify-around max-sm:justify-start md:text-left md:col-span-3 ">
               <p data-aos="fade-up" className="pb-1 text-2xl font-grotters  font-medium">Category</p>
               <ul className="space-y-5 mt-5 max-sm:space-y-2 max-sm:mt-0">
-                <li>
-                  <a data-aos="fade-up"
+                <li data-aos="fade-up">
+                  <a 
                     rel="noopener noreferrer"
                     href="#"
                     className="hover:dark:text-white"
@@ -80,8 +80,8 @@ const Footer = () => {
                     Email: info@learninablitz.nl
                   </a>
                 </li>
-                <li>
-                  <a data-aos="fade-up"
+                <li data-aos="fade-up">
+                  <a 
                     rel="noopener noreferrer"
                     href="#"
                     className="hover:dark:text-white"
@@ -89,8 +89,8 @@ const Footer = () => {
                     Telefoon: +31 (0)6 12345678
                   </a>
                 </li>
-                <li>
-                  <a data-aos="fade-up"
+                <li data-aos="fade-up">
+                  <a 
                     rel="noopener noreferrer"
                     href="#"
                     className="hover:dark:text-white"

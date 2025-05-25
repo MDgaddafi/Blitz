@@ -65,13 +65,14 @@ const Home = () => {
               </div>
 
               <div className="flex items-center max-sm:mt-5 justify-center">
-                <button data-aos="zoom-in-up"
+                <div className='transition-transform duration-300 transform hover:rotate-3'>
+                  <button data-aos="zoom-in-up"
                   style={{
                     backgroundImage: `url(${btnBg7})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
-                  className="text-black font-grotters text-2xl max-sm:text-[16px] max-sm:py-0 mr-6 px-6 py-2 inline-block"
+                  className="text-black font-grotters text-2xl max-sm:text-[16px] max-sm:py-0 mr-6 px-6 py-2 inline-block transition-transform duration-300 hover:rotate-3"
                 >
                   <span className="transform flex ml-2">
                     Meer info
@@ -80,19 +81,22 @@ const Home = () => {
                     </span>
                   </span>
                 </button>
+                </div>
 
-                <button data-aos="zoom-in-up" id="thema"
+                <div className='transition-transform duration-300 transform hover:rotate-3'>
+                  <button data-aos="zoom-in-up" id="thema"
                   style={{
                     backgroundImage: `url(${btnBg5})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
-                  className="text-black font-grotters text-2xl max-sm:text-[16px] max-sm:py-0 px-6 py-2 inline-block"
+                  className="text-black font-grotters text-2xl max-sm:text-[16px] max-sm:py-0 px-6 py-2 inline-block transition-transform duration-300 hover:rotate-3"
                 >
                   <span className="inline-block transform -skew-y-3">
                     Schrijf je in
                   </span>
                 </button>
+                </div>
               </div>
 
               {/* Stock Text */}

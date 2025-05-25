@@ -43,7 +43,7 @@ const ContactForm = () => {
                           backgroundPosition: "center",
                         }}
             type="submit"
-            className="w-[264px] h-[60px] lg:w-[220px] lg:h-[50px] max-sm:w-[200px] max-sm:h-[30px] text-black font-bold font-grotters lg:text-2xl max-sm:text-sm lg:pl-12 pl-10 md:pl-16 rounded-md transition-all flex items-center gap-2"
+            className="w-[264px] h-[60px] lg:w-[220px] lg:h-[50px] max-sm:w-[200px] max-sm:h-[30px] text-black font-bold font-grotters lg:text-2xl max-sm:text-sm lg:pl-12 pl-10 md:pl-16 rounded-md  flex items-center gap-2 transition-transform duration-300 hover:rotate-3"
           >
             VERZENDEN <span><img src={Arrow} alt="" /></span>
           </button>

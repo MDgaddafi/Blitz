@@ -56,7 +56,9 @@ const Header = () => {
               ))}
             </ul>
           </div>
-          <img className="cursor-pointer " src={logo} alt="Logo" />
+          <a href="#">
+            <img className="cursor-pointer " src={logo} alt="Logo" />
+          </a>
         </div>
 
         {/* Center */}
@@ -87,7 +89,7 @@ const Header = () => {
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
-            className="text-black font-grotters text-3xl max-sm:text-xl px-6 max-sm:py-1 py-2 inline-block"
+            className="text-black font-grotters text-3xl max-sm:text-xl px-6 max-sm:py-1 py-2 inline-block transition-transform duration-300 hover:rotate-3"
           >
             <span className="inline-block transform -skew-y-6">
               Schrijf je in

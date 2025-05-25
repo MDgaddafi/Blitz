@@ -56,9 +56,9 @@ const Form = () => {
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
               }}
-              className=" text-[#4E57EB] md:mt-28  max-sm:mt-16 max-sm:ml-5 lg:mt-20 mt-16 text-xl max-sm:text-[16px] w-[300px] max-sm:w-[200px] max-sm:h-[50px] h-[100px] grid grid-cols-2 justify-center items-center text-center font-bold"
+              className=" text-[#4E57EB] md:mt-28  max-sm:mt-16 max-sm:ml-5 lg:mt-20 mt-16 text-xl max-sm:text-[16px] w-[300px] max-sm:w-[200px] max-sm:h-[50px] h-[100px] grid grid-cols-2 justify-center items-center text-center font-bold transition-transform duration-300 hover:rotate-3"
             >
-              <div className="flex mt-5 ml-6 max-sm:ml-2 transform -skew-y-6 max-sm:-skew-y-2 max-sm:mt-2">
+              <div className="flex mt-5 ml-6 max-sm:ml-2 transform -skew-y-6 max-sm:-skew-y-2 max-sm:mt-2 ">
                 <p>
                   <a href="mailto:info@learninablitz.nl">
                     info@learninablitz.nl

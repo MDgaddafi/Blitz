@@ -126,7 +126,7 @@ const SkillSection = () => {
      data-aos-anchor-placement="top-bottom" className="lg:text-[20px] max-sm:text-[14px] text-center">
           wij integreren ook andere tools en technologieën in onze projecten!
         </p>
-        <div className="text-center lg:my-16 max-sm:my-6">
+        <div className="text-center lg:my-16 max-sm:my-6 transition-transform duration-300 transform hover:rotate-3">
           <button
             style={{
               backgroundImage: `url(${btnBg7})`,

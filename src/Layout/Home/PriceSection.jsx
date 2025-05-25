@@ -378,13 +378,13 @@ const PriceSection = () => {
         </div>
       </div>
       {/* button section */}
-      <div data-aos="zoom-in-up" id="contactFormMe" className="my-16">
+      <div data-aos="zoom-in-up" id="contactFormMe" className="my-16 ">
         <button style={{
         backgroundImage: `url(${Buttonbg})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-      }} className="text-[14px] text-center text-black w-[230px] h-[64px]">Alle prijzen zijn exclusief BTW</button>
+      }} className="text-[14px] transition-transform duration-300 hover:rotate-3 text-center text-black w-[230px] h-[64px]">Alle prijzen zijn exclusief BTW</button>
       </div>
       {/* Form Section */}
       <div className="xl:w-[80%] max-sm:w-[100%] mx-auto">
