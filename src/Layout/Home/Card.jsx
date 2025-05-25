@@ -7,8 +7,13 @@ import rightUp from "../../assets/Arrow/rightUp.png";
 import rightButtom from "../../assets/Arrow/rightButtom.png";
 import leftUp from "../../assets/Arrow/leftUp.png";
 import leftBottom from "../../assets/Arrow/leftBottom.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Card = () => {
+   useEffect(() => {
+    AOS.init();
+  }, []);
   const [visible, setVisible] = useState(false);
   const cardRef = useRef();
 
@@ -77,9 +82,9 @@ const Card = () => {
           />
 
           {/* Card content */}
-          <img src={item.icon} alt={item.title} />
-          <h2 className="text-3xl font-grotters text-[#CFFF55]">{item.title}</h2>
-          <p className="text-[14px] text-white">{item.desc}</p>
+          <img data-aos="zoom-in" src={item.icon} alt={item.title} />
+          <h2 data-aos="zoom-in" className="text-3xl font-grotters text-[#CFFF55]">{item.title}</h2>
+          <p data-aos="zoom-in" className="text-[14px] text-white">{item.desc}</p>
         </div>
       ))}
     </div>

@@ -13,6 +13,7 @@
     "@devnomic/marquee": "^1.0.3",
     "@types/react": "^18.3.21",
     "@types/react-dom": "^18.3.7",
+    "aos": "^2.3.4",
     "localforage": "^1.10.0",
     "match-sorter": "^8.0.1",
     "react": "^18.3.1",

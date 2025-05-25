@@ -3,13 +3,17 @@ import icon1 from "../../assets/icon/group.png";
 import icon2 from "../../assets/icon/group-1.png";
 import icon3 from "../../assets/icon/group-3.png";
 import icon4 from "../../assets/icon/group-2.png";
-
 import rightUp from "../../assets/Arrow/rightUp.png";
 import rightBottom from "../../assets/Arrow/rightButtom.png";
 import leftUp from "../../assets/Arrow/leftUp.png";
 import leftBottom from "../../assets/Arrow/leftBottom.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const CardTwo = () => {
+   useEffect(() => {
+    AOS.init();
+  }, []);
   const [visible, setVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -96,9 +100,9 @@ const CardTwo = () => {
           />
 
           {/* Card Content */}
-          <img src={item.icon} alt={item.title} className="w-[60px] md:w-[70px]" />
-          <h2 className="text-2xl font-grotters text-[#4E57EB]">{item.title}</h2>
-          <p className="text-[14px] text-black px-2">{item.desc}</p>
+          <img data-aos="zoom-in" src={item.icon} alt={item.title} className="w-[60px] md:w-[70px]" />
+          <h2 data-aos="zoom-in" className="text-2xl font-grotters text-[#4E57EB]">{item.title}</h2>
+          <p data-aos="zoom-in" className="text-[14px] text-black px-2">{item.desc}</p>
         </div>
       ))}
     </div>

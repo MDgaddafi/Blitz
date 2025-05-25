@@ -5,27 +5,33 @@ import email from "../../assets/form/email.png";
 import form2 from "../../assets/form/form2.png";
 import email2 from "../../assets/form/email2.png";
 import ContactForm from "./ContactForm";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Form = () => {
+   useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="">
       <div className="text-white text-center my-16 max-sm:mt-0">
-        <h2 className="xl:text-8xl md:text-6xl max-sm:text-4xl font-bold">
+        <h2 data-aos="fade-left" className="xl:text-8xl md:text-6xl max-sm:text-4xl font-bold">
           GET IN TOUCH
         </h2>
-        <img
+        <img data-aos="fade-left"
           className="xl:ml-[500px] 2xl:ml-[750px] max-sm:ml-[180px] md:ml-[320px] md:w-[230px] max-sm:w-[150px] xl:w-[400px]"
           src={Vectorbar}
           alt=""
         />
-        <p className="xl:w-[520px] md:w-[70%] max-sm:w-[90%] mx-auto text-[14px] xl:mt-6 max-sm:mt-2 ">
+        <p data-aos="fade-left" className="xl:w-[520px] md:w-[70%] max-sm:w-[90%] mx-auto text-[14px] xl:mt-6 max-sm:mt-2 ">
           Heb je vragen of wil je weten welke extra technologieën wij kunnen
           aanbieden? Neem contact met ons op!
         </p>
       </div>
       {/* Form Section */}
       <div className="grid grid-cols-2 lg:grid-cols-2 lg:p-0 md:grid-cols-1 max-sm:grid-cols-1 mx-auto p-16 md:p-1 max-sm:p-5 2xl:w-[60%] xl:w-[80%] max-sm:w-[100%] md:gap-y-24">
-        <div
+        <div data-aos="flip-left"
           style={{
             backgroundImage: `url(${form})`,
             backgroundSize: "contain",
@@ -63,7 +69,7 @@ const Form = () => {
             </div>
           </div>
         </div>
-        <div
+        <div data-aos="flip-left"
           style={{
             backgroundImage: `url(${form2})`,
             backgroundSize: "contain",

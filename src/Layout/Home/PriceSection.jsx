@@ -9,8 +9,14 @@ import Watch from "../../assets/Watch.svg";
 import Buttonbg from "../../assets/buttonbg.png";
 import Buttonbg23 from "../../assets/skill/barbg.png";
 import Form from "./Form";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const PriceSection = () => {
+   useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div
       style={{
@@ -25,11 +31,13 @@ const PriceSection = () => {
       {/* heding text */}
       <div className="text-center">
         <hr className=" bg-transparent border-none h-24" />
-        <h2 className="text-center font-grotters text-[#4E57EB] text-4xl md:text-7xl lg:text-8xl xl:text-9xl">
+        <h2 data-aos="fade-left"
+     data-aos-anchor-placement="bottom-bottom" className="text-center font-grotters text-[#4E57EB] text-4xl md:text-7xl lg:text-8xl xl:text-9xl">
           PROGRAMMA
         </h2>
         <div className="">
-          <p className="mx-auto md:mt-5 md:mb-20 lg:mb-24 max-sm:mt-2 max-sm:mb-16 leading-[24px] text-[18px] max-sm:text-[14px] text-center text-white">
+          <p data-aos="fade-left"
+     data-aos-anchor-placement="bottom-bottom" className="mx-auto md:mt-5 md:mb-20 lg:mb-24 max-sm:mt-2 max-sm:mb-16 leading-[24px] text-[18px] max-sm:text-[14px] text-center text-white">
             Kies de duur die het beste bij jouw leerdoelen past. Alle
             programma's worden hybride aangeboden.
           </p>
@@ -38,7 +46,7 @@ const PriceSection = () => {
       {/* Main Price Section */}
       <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-6 justify-around">
         {/* price section 1 */}
-        <div className="w-[310px] flex flex-col justify-between h-[479px] p-[30px] border-solid rounded-xl border border-white ">
+        <div data-aos="flip-right" data-aos-anchor-placement="top-center" className="w-[310px] flex flex-col justify-between h-[479px] p-[30px] border-solid rounded-xl border border-white ">
           {/* price */}
           <div className="">
             <div className="flex gap-2 items-center">
@@ -107,7 +115,7 @@ const PriceSection = () => {
           </div>
         </div>
         {/* price section 2 */}
-        <div className="w-[310px] flex flex-col justify-between h-[479px] p-[30px] border-solid rounded-xl border border-white ">
+        <div data-aos="flip-right" data-aos-anchor-placement="top-center" className="w-[310px] flex flex-col justify-between h-[479px] p-[30px] border-solid rounded-xl border border-white ">
           {/* price */}
           <div className="">
             <div className="flex gap-2 items-center justify-between">
@@ -199,7 +207,7 @@ const PriceSection = () => {
           </div>
         </div>
         {/* price section 3 */}
-        <div className="w-[310px] flex flex-col justify-between h-[479px] p-[30px] border-solid rounded-xl border border-white ">
+        <div data-aos="flip-right" data-aos-anchor-placement="top-center" className="w-[310px] flex flex-col justify-between h-[479px] p-[30px] border-solid rounded-xl border border-white ">
           {/* price */}
           <div className="">
             <div className="flex gap-2 items-center">
@@ -284,7 +292,7 @@ const PriceSection = () => {
           </div>
         </div>
         {/* price section 4 */}
-        <div className="w-[310px] flex flex-col justify-between h-[479px] p-[30px] border-solid rounded-xl border border-white ">
+        <div data-aos="flip-right" data-aos-anchor-placement="top-center" className="w-[310px] flex flex-col justify-between h-[479px] p-[30px] border-solid rounded-xl border border-white ">
           {/* price */}
           <div className="">
             <div className="flex gap-2 items-center">
@@ -370,7 +378,7 @@ const PriceSection = () => {
         </div>
       </div>
       {/* button section */}
-      <div id="contactFormMe" className="my-16">
+      <div data-aos="zoom-in-up" id="contactFormMe" className="my-16">
         <button style={{
         backgroundImage: `url(${Buttonbg})`,
         backgroundSize: "cover",

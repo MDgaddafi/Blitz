@@ -1,8 +1,14 @@
 import logo from "../../assets/blacklogo.png";
 import line from "../../assets/LINE-53.png";
 import logoicon from "../../assets/logoicon.png";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Footer = () => {
+    useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
       <footer className="py-6 bg-[#CFFF55] text-black">
@@ -14,17 +20,17 @@ const Footer = () => {
                 href="#"
                 className="flex justify-center space-x-3 md:justify-start"
               >
-                <div className="flex items-center justify-center">
+                <div data-aos="fade-up" className="flex items-center justify-center">
                   <img src={logo} alt="" />
                 </div>
                 
               </a>
-              <p className="w-1/2 max-sm:w-full mt-5">Onze missie is om professionals op te leiden in moderne technologieën die de basis vormen van innovatieve IT- oplossingen.</p>
+              <p data-aos="fade-up" className="w-1/2 max-sm:w-full mt-5">Onze missie is om professionals op te leiden in moderne technologieën die de basis vormen van innovatieve IT- oplossingen.</p>
             </div>
             <div className="col-span-6 text-center md:text-left grid justify-around max-sm:justify-start md:col-span-3">
-              <p className="pb-1 text-2xl font-grotters font-medium">Links</p>
+              <p data-aos="fade-up" className="pb-1 text-2xl font-grotters font-medium">Links</p>
               <ul className="space-y-5 mt-5 max-sm:space-y-2 max-sm:mt-0">
-                <li>
+                <li data-aos="fade-up">
                   <a
                     rel="noopener noreferrer"
                     href="#"
@@ -33,7 +39,7 @@ const Footer = () => {
                     Home
                   </a>
                 </li>
-                <li>
+                <li data-aos="fade-up">
                   <a
                     rel="noopener noreferrer"
                     href="#"
@@ -42,7 +48,7 @@ const Footer = () => {
                     Thema's
                   </a>
                 </li>
-                <li>
+                <li data-aos="fade-up">
                   <a
                     rel="noopener noreferrer"
                     href="#"
@@ -51,7 +57,7 @@ const Footer = () => {
                     Techstack
                   </a>
                 </li>
-                <li>
+                <li data-aos="fade-up">
                   <a
                     rel="noopener noreferrer"
                     href="#"
@@ -63,10 +69,10 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-span-6 text-center grid justify-around max-sm:justify-start md:text-left md:col-span-3 ">
-              <p className="pb-1 text-2xl font-grotters  font-medium">Category</p>
+              <p data-aos="fade-up" className="pb-1 text-2xl font-grotters  font-medium">Category</p>
               <ul className="space-y-5 mt-5 max-sm:space-y-2 max-sm:mt-0">
                 <li>
-                  <a
+                  <a data-aos="fade-up"
                     rel="noopener noreferrer"
                     href="#"
                     className="hover:dark:text-white"
@@ -75,7 +81,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a
+                  <a data-aos="fade-up"
                     rel="noopener noreferrer"
                     href="#"
                     className="hover:dark:text-white"
@@ -84,7 +90,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a
+                  <a data-aos="fade-up"
                     rel="noopener noreferrer"
                     href="#"
                     className="hover:dark:text-white"
@@ -95,13 +101,13 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className=" grid mx-auto w-full items-center"><img className="w-[100%]" src={line} alt="" /></div>
+          <div className=" grid mx-auto w-full items-center"><img data-aos="fade-up" className="w-[100%]" src={line} alt="" /></div>
           <div className=" text-center">
-             <p className="text-center text-[14px]">© 2025 Blitz. Alle rechten voorbehouden.</p>
+             <p data-aos="fade-up" className="text-center text-[14px]">© 2025 Blitz. Alle rechten voorbehouden.</p>
           </div>
         </div>
       </footer>
-      <div className="bg-[#CFFF55]  grid h-[50vh] md:h-[30vh] max-sm:h-[30vh] mx-auto items-center justify-center"><img src={logoicon} alt="" /></div>
+      <div className="bg-[#CFFF55]  grid h-[50vh] md:h-[30vh] max-sm:h-[30vh] mx-auto items-center justify-center"><img data-aos="fade-up" src={logoicon} alt="" /></div>
     </div>
   );
 };
