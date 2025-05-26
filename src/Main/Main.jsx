@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <>
     <div className='z-50 relative'><Header></Header></div>
-    <div className=''><Home></Home></div>
+    <div ><Home></Home></div>
     </>
   );
 };

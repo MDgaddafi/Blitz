@@ -44,7 +44,7 @@ const PriceSection = () => {
         </div>
       </div>
       {/* Main Price Section */}
-      <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-6 justify-around">
+      <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-6 text-white justify-around">
         {/* price section 1 */}
         <div data-aos="flip-right" data-aos-anchor-placement="top-center" className="w-[310px] flex flex-col justify-between h-[479px] p-[30px] border-solid rounded-xl border border-white ">
           {/* price */}

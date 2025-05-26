@@ -28,3 +28,8 @@ html {
 .arrow-animate {
   animation: arrowFadeIn 0.8s ease-out forwards;
 }
+
+body {
+  overflow-x: hidden;
+}
+

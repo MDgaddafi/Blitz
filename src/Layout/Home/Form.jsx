@@ -24,7 +24,7 @@ const Form = () => {
           src={Vectorbar}
           alt=""
         />
-        <p data-aos="fade-left" className="xl:w-[520px] md:w-[70%] max-sm:w-[90%] mx-auto text-[14px] xl:mt-6 max-sm:mt-2 ">
+        <p data-aos="fade-left" className="xl:w-[520px] md:w-[70%] max-sm:w-[90%] text-white mx-auto text-[14px] xl:mt-6 max-sm:mt-2 ">
           Heb je vragen of wil je weten welke extra technologieën wij kunnen
           aanbieden? Neem contact met ons op!
         </p>
@@ -40,7 +40,7 @@ const Form = () => {
           }}
           className=" h-[347px] grid items-start text-black"
         >
-          <div className="w-[385px] xl:ml-10 lg:ml-6 md:ml-36 pl-8 lg:pt-6 md:pt-6 p-12 max-sm:pt-16">
+          <div className="w-[385px] xl:ml-10 text-black lg:ml-6 md:ml-36 pl-8 lg:pt-6 md:pt-6 p-12 max-sm:pt-16">
             <div className="flex gap-2 items-center font-semibold text-xl">
               <img src={email} alt="" />
               <h2>Stuur ons een bericht</h2>

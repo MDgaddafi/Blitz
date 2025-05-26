@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div>
       <footer className="py-6 bg-[#CFFF55] text-black">
-        <div className="container px-6 mx-auto space-y-6">
+        <div className="container text-black px-6 mx-auto space-y-6">
           <div className="grid grid-cols-12">
             <div className="pb-6 col-span-full md:pb-0 md:col-span-6">
               <a

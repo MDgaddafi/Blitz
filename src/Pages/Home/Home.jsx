@@ -46,7 +46,7 @@ const Home = () => {
                 alt=""
               />
 
-              <div className="lg:w-[850px] md:w-[90%] max-sm:w-[100%] mx-auto">
+              <div className="lg:w-[850px] text-white md:w-[90%] max-sm:w-[100%] mx-auto">
                 <p data-aos="fade-up" className="mx-auto h-[200px] md:mt-10 leading-[24px] inline-block text-[18px] max-sm:text-[14px] text-center my-6">
                   {" "}
                   Wij geloven dat de evolutie van programmeren niet het einde
@@ -105,7 +105,7 @@ const Home = () => {
                   ONZE 4 HOOFDTHEMA'S
                 </h2>
                 <div className="w-[500px] max-sm:w-[100%] mx-auto">
-                  <p data-aos="fade-left" className="mx-auto md:mt-5 md:mb-20 lg:mb-24 max-sm:mt-2 max-sm:mb-16 leading-[24px] text-[18px] max-sm:text-[14px] text-center ">
+                  <p data-aos="fade-left" className="mx-auto md:mt-5 md:mb-20 lg:mb-24 max-sm:mt-2 max-sm:mb-16 leading-[24px] text-[18px] text-white max-sm:text-[14px] text-center ">
                     De fundamentele bouwstenen van jouw programma, ontworpen om
                     je een complete skillset te geven.
                   </p>
@@ -118,7 +118,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className='min-w-screen overflow-x-hidden max-sm:-mt-16'>
         <HeroTwo></HeroTwo>
       </div>
       <div>

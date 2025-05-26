@@ -41,7 +41,7 @@ const LogoSlider = () => {
   innerClassName="gap-[4rem] [--gap:4rem]"
   fade={true}
   reverse={true} >
-  {["MAKES", "MAKES", "MAKES", "MAKES", "MAKES", "MAKES"].map(
+  {["FUN", "FUN", "FUN", "FUN", "FUN", "FUN"].map(
     (text, index) => (
       <div
         key={index}

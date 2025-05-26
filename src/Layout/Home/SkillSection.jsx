@@ -33,9 +33,9 @@ const SkillSection = () => {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
-      className="w-full min-h-screen -mt-36 z-0 flex flex-col items-center justify-center"
+      className="w-full min-h-screen -mt-36 z-0 flex flex-col items-center justify-center overflow-hidden"
     >
-      <div id="techstack" className="mt-24">
+      <div id="techstack" className="mt-24 max-sm:mt-0">
         <hr className="w-24 h-24" />
         <h2 data-aos="fade-left" className="text-center font-grotters text-[#4E57EB] lg:mt-36 md:mt-20 mt-24 text-4xl md:text-7xl lg:text-8xl xl:text-9xl">
           ONZE TECHSTACK
@@ -112,18 +112,18 @@ const SkillSection = () => {
         </p>
       </div>
 
-      <div className="w-[80%] mx-auto mt-12 max-sm:mr-0">
+      <div className="w-[80%] mx-auto mt-12 max-sm:mr-0 overflow-hidden">
         <CardTwo />
       </div>
 
       {/* Contact Section */}
       <div className="text-black w-[90%] mb-16 max-sm:-mt-9 mt-24 mx-auto">
         <h2 data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" className="lg:text-[30px] max-sm:text-[20px] text-center">
+     data-aos-anchor-placement="top-bottom" className="lg:text-[30px] text-black max-sm:text-[20px] text-center">
           Mis je een techniek? Neem contact met ons op
         </h2>
         <p data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" className="lg:text-[20px] max-sm:text-[14px] text-center">
+     data-aos-anchor-placement="top-bottom" className="lg:text-[20px] text-black max-sm:text-[14px] text-center">
           wij integreren ook andere tools en technologieën in onze projecten!
         </p>
         <div className="text-center lg:my-16 max-sm:my-6 transition-transform duration-300 transform hover:rotate-3">

@@ -62,7 +62,7 @@ const CardTwo = () => {
   return (
     <div
       ref={sectionRef}
-      className="w-[80%] md:w-[95%] max-sm:w-[95%] max-sm:mr-24 overflow-hidden mx-auto md:grid md:grid-flow-col md:grid-rows-2 md:gap-8 lg:flex md:grid-2 justify-around"
+      className="w-[80%] md:w-[95%] max-sm:w-[95%] mx-auto overflow-hidden md:grid md:grid-flow-col md:grid-rows-2 md:gap-8 lg:flex md:grid-cols-2 justify-around"
     >
       {cardData.map((item, idx) => (
         <div
